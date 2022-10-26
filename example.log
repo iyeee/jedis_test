@@ -1,0 +1,100 @@
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:03:01 CST 2022, rank=1}
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:03:18 CST 2022, rank=1}
+INFO main java.lang.Object - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:03:33 CST 2022, rank=1}
+INFO main java.lang.Object - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:03:39 CST 2022, rank=1}
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:03:47 CST 2022, rank=1}
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:03:49 CST 2022, rank=1}
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:07:53 CST 2022, rank=1}
+ERROR main redis.JedisTest - Failed to connect to any host resolved for DNS name.
+redis.clients.jedis.exceptions.JedisConnectionException: Failed to connect to any host resolved for DNS name.
+	at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:63)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:87)
+	at redis.clients.jedis.Connection.connect(Connection.java:180)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:152)
+	at redis.clients.jedis.Connection.executeCommand(Connection.java:121)
+	at redis.clients.jedis.Jedis.set(Jedis.java:382)
+	at redis.JedisTest.main(JedisTest.java:21)
+	Suppressed: java.net.SocketTimeoutException: connect timed out
+		at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:73)
+		... 6 more
+ERROR main redis.JedisTest - Failed to connect to any host resolved for DNS name.
+redis.clients.jedis.exceptions.JedisConnectionException: Failed to connect to any host resolved for DNS name.
+	at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:63)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:87)
+	at redis.clients.jedis.Connection.connect(Connection.java:180)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:152)
+	at redis.clients.jedis.Connection.executeCommand(Connection.java:121)
+	at redis.clients.jedis.Jedis.set(Jedis.java:382)
+	at redis.JedisTest.main(JedisTest.java:21)
+	Suppressed: java.net.SocketTimeoutException: connect timed out
+		at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:73)
+		... 6 more
+ERROR main redis.JedisTest - Failed to connect to any host resolved for DNS name.
+redis.clients.jedis.exceptions.JedisConnectionException: Failed to connect to any host resolved for DNS name.
+	at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:63)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:87)
+	at redis.clients.jedis.Connection.connect(Connection.java:180)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:152)
+	at redis.clients.jedis.Connection.executeCommand(Connection.java:121)
+	at redis.clients.jedis.Jedis.set(Jedis.java:382)
+	at redis.JedisTest.main(JedisTest.java:21)
+	Suppressed: java.net.SocketTimeoutException: connect timed out
+		at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:73)
+		... 6 more
+ERROR main redis.JedisTest - DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+redis.clients.jedis.exceptions.JedisDataException: DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+	at redis.clients.jedis.Protocol.processError(Protocol.java:96)
+	at redis.clients.jedis.Protocol.process(Protocol.java:137)
+	at redis.clients.jedis.Protocol.read(Protocol.java:192)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:316)
+	at redis.clients.jedis.Connection.getOne(Connection.java:298)
+	at redis.clients.jedis.Connection.executeCommand(Connection.java:123)
+	at redis.clients.jedis.Jedis.set(Jedis.java:382)
+	at redis.JedisTest.main(JedisTest.java:21)
+ERROR main redis.JedisTest - DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+redis.clients.jedis.exceptions.JedisDataException: DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+	at redis.clients.jedis.Protocol.processError(Protocol.java:96)
+	at redis.clients.jedis.Protocol.process(Protocol.java:137)
+	at redis.clients.jedis.Protocol.read(Protocol.java:192)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:316)
+	at redis.clients.jedis.Connection.getOne(Connection.java:298)
+	at redis.clients.jedis.Connection.executeCommand(Connection.java:123)
+	at redis.clients.jedis.Jedis.set(Jedis.java:382)
+	at redis.JedisTest.main(JedisTest.java:21)
+ERROR main redis.JedisTest - DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+redis.clients.jedis.exceptions.JedisDataException: DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+	at redis.clients.jedis.Protocol.processError(Protocol.java:96)
+	at redis.clients.jedis.Protocol.process(Protocol.java:137)
+	at redis.clients.jedis.Protocol.read(Protocol.java:192)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:316)
+	at redis.clients.jedis.Connection.getOne(Connection.java:298)
+	at redis.clients.jedis.Connection.executeCommand(Connection.java:123)
+	at redis.clients.jedis.Jedis.set(Jedis.java:382)
+	at redis.JedisTest.main(JedisTest.java:21)
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:21:20 CST 2022, rank=1}
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:21:23 CST 2022, rank=1}
+INFO main redis.JedisTest - Club{id=1, name='AC', info='米兰', createDate=Wed Oct 26 19:34:53 CST 2022, rank=1}
